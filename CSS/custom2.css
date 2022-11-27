@@ -1,0 +1,213 @@
+
+/* TIPOGRPHY */
+@font-face {
+    font-family: text;
+    src: url(../TYPOGRAPHY/Roboto-Light.ttf);
+}
+
+p,a,h4,span{
+    font-family: text;
+    font-size: 1.2em;
+    animation: textSize 15s ease infinite; 
+}
+
+
+body{
+    width: 99vw;
+    height: 300vh;
+
+
+}
+
+
+/* NAVABAR */
+
+nav{
+    border: 1px solid rgba(224, 0, 224, 0.9);
+    background: linear-gradient(120deg,white,rgba(224, 0, 224, 0.606),white);
+	background-size: 400%;
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+#football a
+{
+    font-size: 2em;
+    padding: 2%;
+    background: rgba(255, 0, 0, 0.581);
+}
+
+#foreing a
+{
+    font-size: 2em;
+    padding: 2%;
+    background: rgba(0, 157, 255, 0.687);
+}
+
+#music a
+{
+    font-size: 2em;
+    padding: 2%;
+    background: rgba(255, 128, 0, 0.581);
+}
+
+
+
+
+#football{
+    width: 100%;
+    height: 25%;
+    margin-top: 10%;
+    background: red;
+    background-image: url(../IMG/2022061716131052890.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards{
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 0, 0, 0);
+    border-radius: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#card{
+    border-radius: 5%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 50%;
+    margin: 5% 0;
+    box-shadow: 0px 0px 10px -1px black;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 1.25s ease-in-out;
+    cursor: pointer;
+}
+.card:not(:hover){
+    transform: scale(1);
+    transition: 1.25s ease-in-out;
+    cursor: default;
+}
+
+#cBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+h4{
+    font-weight: bold;
+}
+span{
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+#carousel{
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+
+
+
+#foreing{
+    width: 100%;
+    height: 25%;
+    background: red;
+    margin-top: 15%;
+    background-image: url(../IMG/torquay-united-kingdom-torquay-harbour-boats.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#music{
+    width: 100%;
+    height: 25%;
+    background: red;
+    margin-top: 15%;
+    background-image: url(../IMG/images\ \(1\).png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes BGgradient { /* KEY FRAME, Animacion de fondo */
+	0% {
+		background-position: 0% 150%;
+        color: rgba(0, 0, 0, 0.725);
+        font-weight: bold;
+	}
+	50% {
+		background-position: 150% 0%;
+        color: black;
+        font-weight: 100;
+	}  
+	100% {
+		background-position: 0% 200%;
+        color: rgba(0, 0, 0, 0.77);
+        font-weight: bold;
+	}
+}
+
+@keyframes textSize { /* KEY FRAME, Animacion de fondo */
+	0% {
+        font-size: 1em;
+        font-weight: bold;
+	}
+    25% {
+        font-size: 1.2em;
+        font-weight: 100;
+	}
+	50% {
+        font-size: 1em;
+        font-weight: bold;
+	}  
+    75% {
+        font-size: 1.2em;
+        font-weight: 100;
+    }
+	100% {
+		font-size: 1em;
+        font-weight: bold;
+	}
+}

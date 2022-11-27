@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../IMG/foto_CV.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/custom2.css">
+    <script defer src="../JS/js2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg  fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">MMV</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active " href="./web.html" aria-current="page">About Me <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobbies</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="./football.html">Football</a>
+                      <a class="dropdown-item" href="./Foreign.html">Foreign Travel</a>
+                      <a class="dropdown-item" href="./music.html">Music</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CV - Profesional</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="./cvManuel.html">CV - MANUEL</a>
+                    <a class="dropdown-item" href="#">CV - PDF</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+
+
+    <!-- CARDS -->
+    <div id="cards" class="container-fluid">
+        <div id="card" class="card-group">
+            <div class="card">
+                <div id="cBody" class="card-body">
+                    <h4 class="card-title">Fooball 11</h4>
+                    <span class="card-text">Alcosa</span>
+                    <p>After 11 years playing indoor soccer I decided to change soccer. Join a team from my city called Alcosa. I had to do some tests to get in and obviously I wasn't the best but they gave me the opportunity to choose between staying or leaving (apparently I didn't have the necessary technique). I finally got in. After 1 year playing in that team I managed to start playing as a midfielder. I was growing how to play and discovered that I had a lot of potential to draw
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="card-group">
+            <div class="card">
+                <div id="cBody" class="card-body">
+                    <h4 class="card-title">Football Sala</h4>
+                    <span class="card-text">Epopeya</span>
+                    <p>Futsal is one of the most important stages of my life. It could be said that this sport was the one that helped me grow as a player and above all as a person. I started out being the worst on the team when I was 7 years old, but as time went by I improved each time, surpassing my teammates, so after 11 years playing I became one of the best players in my team in all categories.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- IMAGES FOOTBALL -->
+<div id="carousel" class="container-fluid">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <h4>FOOTBALL 11</h4>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img id="img1" src="../IMG/1669550260320.jpg" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img id="img2" src="../IMG/1669550260377.png" class="w-100 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img id="img3" src="../IMG/1669550260458.png" class="w-100 d-block" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div id="carousel" class="container-fluid">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <h4>FOOTBALL SALA</h4>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img id="img4" src="../IMG/1669550260320.jpg" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img id="img5" src="../IMG/1669550260377.png" class="w-100 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img id="img6" src="../IMG/1669550260458.png" class="w-100 d-block" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+    
+    
+</body>
+</html>

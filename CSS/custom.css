@@ -1,5 +1,126 @@
+
+/* TIPOGRPHY */
+
+@font-face {
+    font-family: title;
+    src: url(../TYPOGRAPHY/aAromanis.ttf);
+}
+
+
+
+@font-face {
+    font-family: text;
+    src: url(../TYPOGRAPHY/Roboto-Light.ttf);
+}
+
 /* FIRST MOBILE */
 body{
     width: 100vw;
     height: auto;
+    overflow-x: hidden;
 }
+h4{
+    font-family: "title";
+    font-weight: bold;
+    font-size: 2em;
+}
+h6{
+    font-family: "text";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+p,caption,span,li,a{
+    font-family: "text";
+    font-weight: bold;
+    font-size: 1em;
+}
+
+span{
+    color: white;
+}
+
+.space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.ct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.df{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar{
+    padding: 0 15%;
+    background: rgba(83, 1, 83, 0.9);
+}
+
+#myProgress {
+    width: 20px;
+    height: 40vh;
+    background-color: grey;
+    margin-right: 5%;
+  }
+  
+  #myBar {
+    width: 100%;
+    height: 1vh;
+    background-color: rgba(83, 1, 83, 0.9);
+  }
+
+#education{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress{
+    transform: rotate(90deg);
+}
+
+#dropdown{
+    color: white;
+    margin-top: 20%;
+}
+
+#dropdown1{
+    color: white;
+    margin-top: 20%;
+}
+
+#adress{
+    margin-top: 40%;
+    color: black;
+    background:  white;
+}
+#contextBody{
+    padding: 5%;
+}
+
+@media (min-width: 700px) {
+    .ct{
+        display: grid;
+        grid-template-columns: .2fr 1fr;
+    }
+    .df{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #bar{
+        padding: 0;
+        
+    }
+  }
