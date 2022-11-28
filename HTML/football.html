@@ -14,7 +14,7 @@
 <body>
 
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg  fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container">
             <a class="navbar-brand" href="#">MMV</a>
             <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -53,25 +53,34 @@
 
     <!-- CARDS -->
     <div id="cards" class="container-fluid">
-        <div id="card" class="card-group">
-            <div class="card">
-                <div id="cBody" class="card-body">
-                    <h4 class="card-title">Fooball 11</h4>
-                    <span class="card-text">Alcosa</span>
-                    <p>After 11 years playing indoor soccer I decided to change soccer. Join a team from my city called Alcosa. I had to do some tests to get in and obviously I wasn't the best but they gave me the opportunity to choose between staying or leaving (apparently I didn't have the necessary technique). I finally got in. After 1 year playing in that team I managed to start playing as a midfielder. I was growing how to play and discovered that I had a lot of potential to draw
-                    </p>
+        <!-- Modal trigger button -->
+        <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          Launch
+        </button>
+        
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Football Carrear</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        After 11 years playing indoor soccer I decided to change soccer. Join a team from my city called Alcosa. I had to do some tests to get in and obviously I wasn't the best but they gave me the opportunity to choose between staying or leaving (apparently I didn't have the necessary technique). I finally got in. After 1 year playing in that team I managed to start playing as a midfielder. I was growing how to play and discovered that I had a lot of potential to draw
+                       <br><br>
+                        Futsal is one of the most important stages of my life. It could be said that this sport was the one that helped me grow as a player and above all as a person. I started out being the worst on the team when I was 7 years old, but as time went by I improved each time, surpassing my teammates, so after 11 years playing I became one of the best players in my team in all categories.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="button" class="btn btn-primary">OK</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="card" class="card-group">
-            <div class="card">
-                <div id="cBody" class="card-body">
-                    <h4 class="card-title">Football Sala</h4>
-                    <span class="card-text">Epopeya</span>
-                    <p>Futsal is one of the most important stages of my life. It could be said that this sport was the one that helped me grow as a player and above all as a person. I started out being the worst on the team when I was 7 years old, but as time went by I improved each time, surpassing my teammates, so after 11 years playing I became one of the best players in my team in all categories.</p>
-                </div>
-            </div>
-        </div>
+        </div>      
+        
+        
         
     </div>
 

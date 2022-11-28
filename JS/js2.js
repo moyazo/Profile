@@ -36,3 +36,4 @@ if(window.scrollY >= 1261){
 
 })
 
+const myModal = new bootstrap.Modal(document.getElementById('modalId'), options);

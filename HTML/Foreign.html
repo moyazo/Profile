@@ -51,26 +51,32 @@
 
 
     <div id="cards" class="container-fluid">
-      <div id="card" class="card-group">
-          <div class="card">
-              <div id="cBody" class="card-body">
-                  <h4 class="card-title">United Kingdom</h4>
-                  <span class="card-text">Torquay</span>
-                  <p>In July 2019 I went on a trip to England on my own. I went with a company called EF. My final destination would be a town in the south of England called Torquay. However, first I was in London for 3 days. At first, I thought I was going to be the only spanish or at most 5 more, but it turned out that I was with people from different parts of Spain (around 50). As expected I did not miss a single famous area.
-                  </p>
-              </div>
-          </div>
-      </div>
-      <div id="card" class="card-group">
-          <div class="card">
-              <div id="cBody" class="card-body">
-                  <h4 class="card-title">Malta</h4>
-                  <span class="card-text">Sliema</span>
-                  <p>En julio de 2022, me dieron la oportunidad de estar un mes de prácticas en Malta. Obviamente, no dejé pasar esta oportunidad de viajar al extranjero y encima a un país como Malta. Llegué el 4 de julio y para mi sorpresa, malta fue totalmente diferente a lo que me esperaba o por lo menos la zona donde iba a vivir. Me alojé en uno de los apartamentos de la empresa AM LANGUAGE en la ciudad de Sliema. Sienceramente, excepto el trabajo y el apartamento, lo que más me gusto de malta fue las vistas por la mañana, era impresionantes. Respecto a la gastronomía, tengo que destacar los pastizzi, son realmente increibles.</p>
-              </div>
-          </div>
-      </div>
+      <!-- Modal trigger button -->
+      <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+        Launch
+      </button>
       
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="modalTitleId">Football Carrear</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>In July 2019 I went on a trip to England on my own. I went with a company called EF. My final destination would be a town in the south of England called Torquay. However, first I was in London for 3 days. At first, I thought I was going to be the only spanish or at most 5 more, but it turned out that I was with people from different parts of Spain (around 50). As expected I did not miss a single famous area.
+                     <br><br>
+                     <p>En julio de 2022, me dieron la oportunidad de estar un mes de prácticas en Malta. Obviamente, no dejé pasar esta oportunidad de viajar al extranjero y encima a un país como Malta. Llegué el 4 de julio y para mi sorpresa, malta fue totalmente diferente a lo que me esperaba o por lo menos la zona donde iba a vivir. Me alojé en uno de los apartamentos de la empresa AM LANGUAGE en la ciudad de Sliema. Sienceramente, excepto el trabajo y el apartamento, lo que más me gusto de malta fue las vistas por la mañana, era impresionantes. Respecto a la gastronomía, tengo que destacar los pastizzi, son realmente increibles.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-primary">OK</button>
+                  </div>
+              </div>
+          </div>
+      </div>  
   </div>
 
 

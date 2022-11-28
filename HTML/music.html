@@ -49,28 +49,35 @@
     </div>
 
 
-    <div id="cards" class="container-fluid">
-        <div id="card" class="card-group">
-            <div class="card">
-                <div id="cBody" class="card-body">
-                    <h4 class="card-title">General Music</h4>
-                    <span class="card-text">Rap/Trap - Reggeaton</span>
-                    <p>I am a big fan of music. Apart from classical music and other types of music I like the most. To be exact, if I like the rhythm of the song, it is very likely that I will like it. Speaking about my favorite music I have to highlight two. Trap/rap and reggaeton.
-                        On the trap/rap side we have Eladio Carrion. On the other hand, in reggaeton my favorite referent is Bad bunny. But if I had to choose one genre, it would be trap.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="card" class="card-group">
-            <div class="card">
-                <div id="cBody" class="card-body">
-                    <h4 class="card-title">Rap/Trap</h4>
-                    <span class="card-text">Favorite Genre</span>
-                    <p>Like I said before, my favorite music is rap/trap. Apart from the rhythm that appears in each song of this genre, I have to say that in this case what I love about this genre is the lyrics. The lyrics of the songs literally touch my heart. In fact I have acquired the habit of listening to this genre of music every time I study or want to distract myself. Eladio Carrión is the singer who most conveys sensations to me with his lyrics. I guess it's because I identify with them.</p>
-                </div>
-            </div>
-        </div>
+    <div id="cards" class="container-fluid">        
+        <!-- Modal trigger button -->
+        <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          Launch
+        </button>
         
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>I am a big fan of music. Apart from classical music and other types of music I like the most. To be exact, if I like the rhythm of the song, it is very likely that I will like it. Speaking about my favorite music I have to highlight two. Trap/rap and reggaeton.
+                            On the trap/rap side we have Eladio Carrion. On the other hand, in reggaeton my favorite referent is Bad bunny. But if I had to choose one genre, it would be trap.
+                        </p>
+                        <br><br>
+                        <p>Like I said before, my favorite music is rap/trap. Apart from the rhythm that appears in each song of this genre, I have to say that in this case what I love about this genre is the lyrics. The lyrics of the songs literally touch my heart. In fact I have acquired the habit of listening to this genre of music every time I study or want to distract myself. Eladio Carrión is the singer who most conveys sensations to me with his lyrics. I guess it's because I identify with them.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
