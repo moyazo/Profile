@@ -8,76 +8,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/custom2.css">
-    <script defer src="../JS/js2.js"></script>
     <title>Manuel Moya - Foreign</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg  fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#">MMV</a>
-            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active " href="./web.html" aria-current="page">About Me <span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobbies</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="./football.html">Football</a>
-                      <a class="dropdown-item" href="./foreing.html">Foreign Travel</a>
-                      <a class="dropdown-item" href="./music.html">Music</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CV - Profesional</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="./cvManuel.html">CV - MANUEL</a>
-                    <a class="dropdown-item" href="#">CV - PDF</a>
-                  </div>
-                </li>
-              </ul>
-              <form class="d-flex my-2 my-lg-0">
-                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-    </div>
-
-
-
-    <div id="cards" class="container-fluid">
-      <!-- Modal trigger button -->
-      <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-        Launch
-      </button>
-      
-      <!-- Modal Body -->
-      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-      <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="modalTitleId">Football Carrear</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>In July 2019 I went on a trip to England on my own. I went with a company called EF. My final destination would be a town in the south of England called Torquay. However, first I was in London for 3 days. At first, I thought I was going to be the only spanish or at most 5 more, but it turned out that I was with people from different parts of Spain (around 50). As expected I did not miss a single famous area.
-                     <br><br>
-                     <p>En julio de 2022, me dieron la oportunidad de estar un mes de prácticas en Malta. Obviamente, no dejé pasar esta oportunidad de viajar al extranjero y encima a un país como Malta. Llegué el 4 de julio y para mi sorpresa, malta fue totalmente diferente a lo que me esperaba o por lo menos la zona donde iba a vivir. Me alojé en uno de los apartamentos de la empresa AM LANGUAGE en la ciudad de Sliema. Sienceramente, excepto el trabajo y el apartamento, lo que más me gusto de malta fue las vistas por la mañana, era impresionantes. Respecto a la gastronomía, tengo que destacar los pastizzi, son realmente increibles.</p>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-                      <button type="button" class="btn btn-primary">OK</button>
-                  </div>
-              </div>
-          </div>
-      </div>  
-  </div>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container">
+         <a class="navbar-brand" href="#">MMV</a>
+         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+             aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavId">
+             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TOPICS</a>
+                     <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="./football.html">FOOTBALL</a>
+                      <a class="dropdown-item" href="./Foreign.html">FOREIGN</a>
+                      <a class="dropdown-item" href="./music.html">MUSIC</a>
+                      <a class="dropdown-item" href="./cvManuel.html">CV -MANUEL MOYA</a>
+                     </div>
+                 </li>
+             </ul>
+             <form class="d-flex my-2 my-lg-0">
+                 <input class="form-control me-sm-2" type="text" placeholder="Search">
+                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+             </form>
+         </div>
+      </div>
+    </nav>
+    
+ </div>
 
 
   <div id="carousel" class="container-fluid">

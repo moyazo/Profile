@@ -14,20 +14,16 @@ p,a,h4,span{
 
 body{
     width: 99vw;
-    height: 300vh;
-
-
+    height: auto;
+    overflow-x: hidden;
 }
+
 
 
 /* NAVABAR */
 
 nav{
     border: 1px solid rgba(224, 0, 224, 0.9);
-    background: linear-gradient(120deg,white,rgba(224, 0, 224, 0.606),white);
-	background-size: 400%;
-	z-index: -1;
-	animation: BGgradient 15s ease infinite; 
 }
 
 #football a
@@ -56,7 +52,7 @@ nav{
 
 #football{
     width: 100%;
-    height: 25%;
+    height: 20%;
     margin-top: 10%;
     background: red;
     background-image: url(../IMG/2022061716131052890.jpg);
@@ -68,32 +64,21 @@ nav{
 }
 
 #cards{
-    width: 50%;
-    height: 20%;
-    background: rgba(255, 0, 0, 0);
-    border-radius: 5%;
-
-    display: grid;
-    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 #card{
-    border-radius: 5%;
-    width: 100%;
+    width: 50%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
 }
 
-.card{
-    width: 50%;
-    margin: 5% 0;
-    box-shadow: 0px 0px 10px -1px black;
-}
 
 .card:hover{
     transform: scale(1.1);
@@ -122,7 +107,7 @@ span{
 }
 
 #carousel{
-    margin-top: 0%;
+    margin-top: 5%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -144,7 +129,7 @@ span{
 
 #foreing{
     width: 100%;
-    height: 25%;
+    height: 20%;
     background: red;
     margin-top: 15%;
     background-image: url(../IMG/torquay-united-kingdom-torquay-harbour-boats.jpg);
@@ -158,7 +143,7 @@ span{
 
 #music{
     width: 100%;
-    height: 25%;
+    height: 20%;
     background: red;
     margin-top: 15%;
     background-image: url(../IMG/images\ \(1\).png);
@@ -169,51 +154,6 @@ span{
     align-items: center;
 }
 
-
-
-@media (max-width: 800px) {
-
-    nav{
-        align-items: center;
-        justify-content: center;
-    }
-
-
-#cards{
-    width: 100%;
-    height: 20%;
-    background: rgba(255, 0, 0, 0);
-    
-    border-radius: 5%;
-    margin: 60% 0;
-    display:  flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#cBody{
-    justify-content: center;
-}
-
-
-#card{
-    width: 100%;
-    margin: 20% 0;
-}
-
-#carousel{
-    padding-top: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#carouselId{
-    width: 100%;
-}
-  }
 
 
 @keyframes BGgradient { /* KEY FRAME, Animacion de fondo */
@@ -232,5 +172,55 @@ span{
         color: rgba(0, 0, 0, 0.77);
         font-weight: bold;
 	}
+}
+
+
+
+
+@media (max-width: 1196px) {
+    #football{
+        margin-top: 20%;
+    }
+
+    #foreing{
+        margin-top: 20%;
+    }
+    
+    
+    #music{
+        margin-top: 20%;
+    }
+
+    #cards{
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #card{
+        width: 75%;
+        height: 50%;
+        
+    }
+
+    #carousel{
+        width: 80%;
+        
+
+    }
+    #carouselId{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
 
 }
+
